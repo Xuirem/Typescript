@@ -1,0 +1,13 @@
+interface Question {
+    question: string;
+    answer: string;
+}
+
+let q: Question = { question: "Capital of France?", answer: "Paris" };
+
+function checkAnswer(input: string) {
+    console.log(input === q.answer ? "Correct!" : "Wrong!");
+}
+
+checkAnswer("Paris"); // Correct!
+checkAnswer("London"); // Wrong!
