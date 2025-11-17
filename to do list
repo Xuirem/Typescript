@@ -1,0 +1,9 @@
+let tasks: string[] = [];
+
+function addTask(task: string) {
+    tasks.push(task);
+}
+
+addTask("Buy groceries");
+addTask("Study TypeScript");
+console.log(tasks);
