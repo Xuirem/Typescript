@@ -1,0 +1,10 @@
+interface Student {
+    name: string;
+    grade: number;
+}
+
+let student1: Student = { name: "Alice", grade: 90 };
+let student2: Student = { name: "Bob", grade: 85 };
+
+let students: Student[] = [student1, student2];
+students.forEach(s => console.log(s.name + ": " + s.grade));
